@@ -1,0 +1,90 @@
+.page-footer {
+  background-color: $drop-grey;
+}
+
+.page-footer__main {
+  @include container(20px, 20px, 320px);
+  display: flex;
+  flex-direction: column;
+  padding-top: 39px;
+
+  @media (min-width: $tablet-width) {
+    @include container(30px, 30px, 768px);
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 35px;
+    padding-bottom: 35px;
+  }
+
+  @media (min-width: $desktop-width) {
+    @include container(110px, 110px, 1440px);
+  }
+}
+
+
+.page-footer__logo {
+  height: 24px;
+  max-width: 128px;
+  align-self: center;
+  padding-bottom: 32px;
+
+  &:hover {
+    opacity: 0.7;
+  }
+
+  &:focus {
+    opacity: 0.5;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 100%;
+    padding: 0;
+  }
+}
+
+.page-footer__link {
+  text-decoration: none;
+  font-family: $arial;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  color: $grey-dark;
+
+  &:hover {
+    opacity: 1;
+  }
+
+  &:focus {
+    opacity: 0.3;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-right: 19px;
+  }
+}
+
+.page-footer__copyright {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 0 17px 0;
+}
+
+.page-footer__company-icon {
+  height: 37px;
+  fill: #666666;
+
+  &:hover {
+    fill: $green-but;
+  }
+
+  &:focus {
+    fill: $green-but;
+    opacity: 0.3;
+  }
+}
+
+.page-footer__html {
+  width: 33px;
+}
